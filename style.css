@@ -1,0 +1,83 @@
+
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #ffffff;
+    background-image: none;
+    color:black;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #ffffff;
+    color:black;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    color:black;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #ffffff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  
+
+#stockname1,#stockname2{
+
+    border-radius: .25em;
+    width: 200px;
+    height: 30px;
+}
+
+input[type="text"]::placeholder {  
+                  
+  /* Firefox, Chrome, Opera */ 
+  text-align: center; 
+} 
+
+.parallax {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
